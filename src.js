@@ -1,7 +1,7 @@
 (function () {
 
 const hash = parseHash(document.location.hash);
-const location = '';
+const location = 'https://luminoray.github.io/kk-denpa-receiver/';
 const clientId = '1ga8qsv5fm5hxz0b2ntkwykdre5euz';
 
 const elSender = document.getElementsByClassName('sender')[0];
@@ -28,7 +28,7 @@ if (hash.access_token === undefined) {
 }
 
 // Get the user id from the channel
-fetch('https://api.twitch.tv/helix/users?login=', {
+fetch('https://api.twitch.tv/helix/users?login=KKCYBER', {
     "method": "GET",
     "headers": {
         "Authorization": "Bearer " + hash.access_token,
