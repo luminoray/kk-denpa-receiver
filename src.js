@@ -54,7 +54,7 @@ fetch('https://api.twitch.tv/helix/users?login=KKCYBER', {
         }
     
         if (message.metadata.message_type === 'notification') {
-            if (message.payload.event.reward.title === "The 1 point test") {
+            if (message.payload.event.reward.title === "SEND DENPA WAVES") {
                 users.push(message.payload.event.user_name);
             }
         }
