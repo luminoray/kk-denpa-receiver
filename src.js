@@ -8,7 +8,7 @@ const elSender = document.getElementsByClassName('sender')[0];
 const elProgressFill = document.getElementsByClassName('progress-filling')[0];
 
 let progress = 0;
-const difficulty = 5;
+const difficulty = 100;
 
 const users = [];
 
