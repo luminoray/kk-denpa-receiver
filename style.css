@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "W95FA";
+    src: url('font/w95fa.woff');
+    src: url('font/w95fa.woff');
+}
+
+body {
+    font-family: "W95FA", Arial;
+    font-size: 14px;
+}
+
+#window {
+    background-color: #95aab3;
+    max-width: 400px;
+    max-height: 300px;
+    border: outset;
+    border-color: #95aab3;
+}
+
+.title {
+    background-color: blue;
+    background-image: linear-gradient(to right, #1414a0,rgb(24, 24, 245));
+    color: white;
+    padding: 2px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 20px;
+}
+
+.transfer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.connection {
+    width: 150px;
+    height: 0px;
+    border-top: 2px dotted black;
+}
+
+@keyframes datatravel {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.data {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    position: relative;
+    top: -15px;
+    animation-name: datatravel;
+    animation-duration: 1s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+}
+
+.transfer img {
+    width:80px;
+}
+
+.sender {
+    margin: 10px 0;
+}
+
+.progress-container {
+    border: inset;
+    border-color: rgb(0, 0, 0);
+    border-right-color: #ffffff;
+    border-bottom-color: #ffffff;
+    height: 24px;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+.progress-filling {
+    background-color: #1414a0;
+    width: 0%;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.buttons div {
+    border: 2px outset;
+    border-color: #fff;
+    border-right-color: #000;
+    border-bottom-color: #000;
+    width: 75px;
+    padding: 2px;
+    text-align: center;
+}
+
+.buttons .cancel {
+    color: grey;
+    text-shadow: 1px 1px 0 #fff;
+}
